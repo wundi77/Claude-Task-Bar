@@ -1,18 +1,73 @@
 import SwiftUI
+import ServiceManagement
 
 struct TaskBoardView: View {
     @EnvironmentObject var store: TaskStore
 
     var body: some View {
-        HStack(spacing: 0) {
-            ForEach(Array(Task.Column.allCases.enumerated()), id: \.element) { idx, column in
-                ColumnView(column: column)
-                if idx < Task.Column.allCases.count - 1 {
-                    Divider()
+        VStack(spacing: 0) {
+            HStack(spacing: 0) {
+                ForEach(Array(Task.Column.allCases.enumerated()), id: \.element) { idx, column in
+                    ColumnView(column: column)
+                    if idx < Task.Column.allCases.count - 1 {
+                        Divider()
+                    }
                 }
             }
+
+            Divider()
+            boardFooter
         }
-        .frame(width: 720, height: 460)
+        .frame(width: 720, height: 490)
         .background(Color(NSColor.windowBackgroundColor))
+    }
+
+    private var boardFooter: some View {
+        HStack {
+            LoginItemToggle()
+            Spacer()
+            Button("Beenden") { NSApp.terminate(nil) }
+                .buttonStyle(.plain)
+                .foregroundColor(.secondary)
+                .font(.system(size: 11))
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 7)
+        .background(Color(NSColor.windowBackgroundColor))
+    }
+}
+
+// MARK: - Login-Item-Toggle
+
+struct LoginItemToggle: View {
+    @State private var isEnabled: Bool = (SMAppService.mainApp.status == .enabled)
+    @State private var errorMessage: String?
+
+    var body: some View {
+        HStack(spacing: 6) {
+            Toggle("Beim Login automatisch starten", isOn: $isEnabled)
+                .toggleStyle(.checkbox)
+                .font(.system(size: 11))
+                .onChange(of: isEnabled) { _, newValue in
+                    do {
+                        if newValue {
+                            try SMAppService.mainApp.register()
+                        } else {
+                            try SMAppService.mainApp.unregister()
+                        }
+                        errorMessage = nil
+                    } catch {
+                        isEnabled = !newValue
+                        errorMessage = error.localizedDescription
+                    }
+                }
+
+            if let msg = errorMessage {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .foregroundColor(.orange)
+                    .font(.system(size: 11))
+                    .help(msg)
+            }
+        }
     }
 }
