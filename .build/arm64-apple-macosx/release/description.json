@@ -1,0 +1,340 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ClaudeTaskMenuBar-arm64-apple-macosx15.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/sources",
+      "importPath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/ClaudeTaskMenuBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Models/TaskModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/AddTaskView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/ColumnView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskBoardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskCardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "ClaudeTaskMenuBar",
+      "moduleOutputPath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/Modules/ClaudeTaskMenuBar.swiftmodule",
+      "objects" : [
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp.swift.o",
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel.swift.o",
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView.swift.o",
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView.swift.o",
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView.swift.o",
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "10",
+        "-serialize-diagnostics",
+        "-O",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "ClaudeTaskMenuBar_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "claude_task_bar"
+      ],
+      "outputFileMapPath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/Modules/ClaudeTaskMenuBar.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/ClaudeTaskMenuBarApp.swift",
+        "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Models/TaskModel.swift",
+        "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/AddTaskView.swift",
+        "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/ColumnView.swift",
+        "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskBoardView.swift",
+        "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskCardView.swift"
+      ],
+      "tempsPath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ClaudeTaskMenuBar" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ClaudeTaskMenuBar",
+      "-package-name",
+      "claude_task_bar",
+      "-c",
+      "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/ClaudeTaskMenuBarApp.swift",
+      "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Models/TaskModel.swift",
+      "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/AddTaskView.swift",
+      "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/ColumnView.swift",
+      "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskBoardView.swift",
+      "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskCardView.swift",
+      "-I",
+      "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "10",
+      "-serialize-diagnostics",
+      "-O",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "ClaudeTaskMenuBar_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "claude_task_bar",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ClaudeTaskMenuBar" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/ClaudeTaskMenuBarApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Models/TaskModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/AddTaskView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/ColumnView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskBoardView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskCardView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/sources"
+    },
+    "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.product/Objects.LinkFileList"
+    },
+    "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

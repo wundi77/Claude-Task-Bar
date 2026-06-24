@@ -1,0 +1,43 @@
+{
+  "": {
+    "dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBar.d",
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBar.o",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/master.swiftdeps"
+  },
+  "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/ClaudeTaskMenuBarApp.swift": {
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp.swift.o",
+    "swiftmodule": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp.swiftdeps",
+    "diagnostics": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ClaudeTaskMenuBarApp.dia"
+  },
+  "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Models/TaskModel.swift": {
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel.swift.o",
+    "swiftmodule": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel.swiftdeps",
+    "diagnostics": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskModel.dia"
+  },
+  "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/AddTaskView.swift": {
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView.swift.o",
+    "swiftmodule": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView.swiftdeps",
+    "diagnostics": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/AddTaskView.dia"
+  },
+  "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/ColumnView.swift": {
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView.swift.o",
+    "swiftmodule": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView.swiftdeps",
+    "diagnostics": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/ColumnView.dia"
+  },
+  "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskBoardView.swift": {
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView.swift.o",
+    "swiftmodule": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView.swiftdeps",
+    "diagnostics": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskBoardView.dia"
+  },
+  "/Users/jens/Claude/Claude-Task-Bar/Sources/ClaudeTaskMenuBar/Views/TaskCardView.swift": {
+    "object": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView.swift.o",
+    "swiftmodule": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView~partial.swiftmodule",
+    "swift-dependencies": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView.swiftdeps",
+    "diagnostics": "/Users/jens/Claude/Claude-Task-Bar/.build/arm64-apple-macosx/release/ClaudeTaskMenuBar.build/TaskCardView.dia"
+  }
+}
