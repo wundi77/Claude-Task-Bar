@@ -21,7 +21,6 @@ struct TaskCardView: View {
                 Text(task.notes)
                     .font(.system(size: 11))
                     .foregroundColor(.secondary)
-                    .lineLimit(4)
                     .fixedSize(horizontal: false, vertical: true)
             }
 
@@ -61,7 +60,6 @@ struct TaskCardView: View {
                 .font(.system(size: 13))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .fixedSize(horizontal: false, vertical: true)
-                .lineLimit(4)
                 .textSelection(.enabled)
         }
     }
@@ -76,7 +74,6 @@ struct TaskCardView: View {
 
     private var iconControls: some View {
         HStack(spacing: 3) {
-            // Titel bearbeiten
             Button {
                 titleDraft = task.title
                 withAnimation { isEditingTitle = true }
@@ -86,7 +83,6 @@ struct TaskCardView: View {
             .buttonStyle(CardIconButtonStyle(color: .gray, isHovered: isHovered))
             .help("Titel bearbeiten")
 
-            // Notiz bearbeiten / hinzufügen
             Button {
                 notesDraft = task.notes
                 withAnimation { isEditingNotes = true }
@@ -96,7 +92,6 @@ struct TaskCardView: View {
             .buttonStyle(CardIconButtonStyle(color: .purple, isHovered: isHovered))
             .help(task.notes.isEmpty ? "Notiz hinzufügen" : "Notiz bearbeiten")
 
-            // Löschen
             Button {
                 withAnimation { store.delete(task) }
             } label: {
@@ -178,7 +173,7 @@ struct TaskCardView: View {
     }
 }
 
-// MARK: - Icon-Button-Style (kompakt, Helligkeit reagiert auf Hover)
+// MARK: - Icon-Button-Style
 
 struct CardIconButtonStyle: ButtonStyle {
     let color: Color
