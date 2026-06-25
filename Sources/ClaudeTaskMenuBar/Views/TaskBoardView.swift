@@ -4,24 +4,15 @@ import ServiceManagement
 struct TaskBoardView: View {
     @EnvironmentObject var store: TaskStore
 
-    // Fensterhöhe dynamisch: passt sich der längsten Spalte an,
-    // gedeckelt auf 50 % der sichtbaren Bildschirmhöhe.
-    private var boardHeight: CGFloat {
-        let maxCards = Task.Column.allCases
-            .map { store.tasks(in: $0).count }
-            .max() ?? 0
+    // Gemessene Inhaltshoehe der laengsten Spalte (wird live aktualisiert)
+    @State private var columnContentHeight: CGFloat = 100
 
-        let headerH: CGFloat = 38   // Spaltenheader inkl. Padding
-        let footerH: CGFloat = 36   // Footer inkl. Padding
-        let cardH:   CGFloat = 42   // Karte (einzeilig) inkl. Spacing
-        let colPad:  CGFloat = 20   // Innenabstand oben + unten in der Spalte
+    private let headerH: CGFloat = 38
+    private let footerH: CGFloat = 36
 
-        let contentH = maxCards > 0
-            ? CGFloat(maxCards) * cardH + colPad
-            : colPad
-
-        let ideal   = headerH + contentH + footerH
+    private var windowHeight: CGFloat {
         let screenH = NSScreen.main?.visibleFrame.height ?? 800
+        let ideal   = headerH + columnContentHeight + footerH
         return min(max(ideal, 160), screenH * 0.5)
     }
 
@@ -39,9 +30,13 @@ struct TaskBoardView: View {
             Divider()
             boardFooter
         }
-        .frame(width: 720, height: boardHeight)
+        .frame(width: 720, height: windowHeight)
         .background(Color(NSColor.windowBackgroundColor))
-        .animation(.easeInOut(duration: 0.2), value: boardHeight)
+        .animation(.easeInOut(duration: 0.2), value: windowHeight)
+        // Hoehe der laengsten Spalte empfangen
+        .onPreferenceChange(ColumnContentHeightKey.self) { h in
+            columnContentHeight = h
+        }
     }
 
     private var boardFooter: some View {

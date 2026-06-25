@@ -1,17 +1,25 @@
 import SwiftUI
 
+// Meldet die tatsächlich gerenderte Inhaltshoehe jeder Spalte nach oben.
+struct ColumnContentHeightKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = max(value, nextValue())
+    }
+}
+
 struct ColumnView: View {
     let column: Task.Column
     @EnvironmentObject var store: TaskStore
 
-    @State private var isAddingTask = false
+    @State private var isAddingTask  = false
     @State private var isDropTargeted = false
 
     private var accentColor: Color {
         switch column {
-        case .todo:  return Color(red: 0.27, green: 0.52, blue: 0.96)  // Blau
-        case .doing: return Color(red: 0.96, green: 0.60, blue: 0.17)  // Orange
-        case .done:  return Color(red: 0.22, green: 0.78, blue: 0.51)  // Grün
+        case .todo:  return Color(red: 0.27, green: 0.52, blue: 0.96)
+        case .doing: return Color(red: 0.96, green: 0.60, blue: 0.17)
+        case .done:  return Color(red: 0.22, green: 0.78, blue: 0.51)
         }
     }
 
@@ -90,6 +98,15 @@ struct ColumnView: View {
             .padding(10)
             .animation(.spring(response: 0.3, dampingFraction: 0.8), value: store.tasks)
             .animation(.spring(response: 0.3, dampingFraction: 0.8), value: isAddingTask)
+            // Tatsächliche Inhaltshoehe messen und nach oben melden
+            .background(
+                GeometryReader { geo in
+                    Color.clear.preference(
+                        key: ColumnContentHeightKey.self,
+                        value: geo.size.height
+                    )
+                }
+            )
         }
     }
 }
